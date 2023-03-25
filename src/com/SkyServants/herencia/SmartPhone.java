@@ -23,5 +23,19 @@ public class SmartPhone extends SmartDevice {
         this.carcasa = carcasa;
     }
 
+    @Override
+    public String toString() {
+        return "SmartPhone{" +
+                "pixelCam=" + pixelCam +
+                ", numCam=" + numCam +
+                ", carcasa='" + carcasa + '\'' +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", color='" + color + '\'' +
+                ", dimensionPantalla=" + dimensionPantalla +
+                ", precio=" + precio +
+                ", disponibilidad=" + disponibilidad +
+                '}';
+    }
 }
 

@@ -11,6 +11,7 @@ public class SmartWatch extends SmartDevice {
 
     //Constructor
     public SmartWatch() {
+        super();
     }
 
     public SmartWatch(String marca, String modelo, String color, double dimensionPantalla,
@@ -20,5 +21,18 @@ public class SmartWatch extends SmartDevice {
 
         this.colorCorreas = colorCorreas;
         this.genero = genero;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "colorCorreas='" + colorCorreas + '\'' +
+                ", genero='" + genero + '\'' +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", color='" + color + '\'' +
+                ", dimensionPantalla=" + dimensionPantalla +
+                ", precio=" + precio +
+                ", disponibilidad=" + disponibilidad;
     }
 }
